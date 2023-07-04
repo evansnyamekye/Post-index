@@ -113,3 +113,15 @@ body {
   margin-top: 12px;
   gap: 20px;
 }
+
+.social a:hover {
+  color: #505f79;
+  opacity: 0.5;
+}
+
+@media (min-width: 786px) {
+  .container {
+    margin: 0 auto;
+    padding: 20px;
+  }
+}
