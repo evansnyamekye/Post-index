@@ -58,7 +58,7 @@
 To get a local copy up and running, follow these steps:
 - Open your Terminal
 - Navigate to the desired directory[folder] to which you want to clone the repository to
-- [Copy & Paste] git clone https://github.com/evansnyamekye/Portfolio-CompleteWebsite.git
+- [Copy & Paste] git clone https://github.com/evansnyamekye/Post-index.git
 
 ### Prerequisites
 
