@@ -75,16 +75,17 @@ body {
   background-position: center 50px;
   top: 70px;
   background-color: #fff;
-  border-bottom-left-radius: 80px;
+  border-bottom-left-radius: 120px;
   height: 718px;
   width: 100%;
 }
 
 .banner .banner-text {
-  margin-top: 120px;
+  margin-top: 130px;
 }
 
 .banner .banner-text h1 {
+  width: 95%;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
