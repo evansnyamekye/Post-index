@@ -92,15 +92,15 @@ Install this project with:
 To run tests, run the following command:
 
 - npx stylelint "**/*.{css,scss}"
-- npx hint .
+- npx hint.
 
-### Deployment (Porfolio website)
+### Deployment (Portfolio website)
 
-This project is deployed by using Github tools. 
+This project is deployed by using GitHub tools. 
 
 ### Online-Link (Complete website)
 
-- https://evansnyamekye.github.io/Portfolio-CompleteWebsite/
+- https://post-index-git-main-evansnyamekye.vercel.app/
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -108,7 +108,7 @@ This project is deployed by using Github tools.
  
 ### Usage
 
-To run the project, execute the following command by clonning to your machine:
+To run the project, execute the following command by cloning to your machine:
 
 
 Example command:
