@@ -92,6 +92,11 @@ p {
   margin-top: 130px;
 }
 
+.about-text h1 {
+  font-size: 40px;
+  margin-top: -10px;
+}
+
 .banner .banner-text h1 {
   width: 95%;
   font-weight: 700;
@@ -123,6 +128,12 @@ p {
   gap: 20px;
 }
 
+.social-nl a {
+  margin-right: 10px;
+  color: #505f79;
+  font-size: 25px;
+}
+
 .social a:hover {
   color: #505f79;
   opacity: 0.5;
@@ -130,7 +141,14 @@ p {
 
 /* Work  */
 .work {
+  display: grid;
+  grid-template-columns: 1fr;
   margin-top: 50px;
+}
+
+.social-nl a:hover {
+  color: #505f79;
+  opacity: 0.5;
 }
 
 .work .lang a {
@@ -144,8 +162,8 @@ p {
 }
 
 .work .card {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   background-color: #fff;
   border-radius: 16px;
   padding: 20px;
@@ -154,10 +172,23 @@ p {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
+.lan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.lan h2 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
 .skill-lang li h2 {
   font-weight: 500;
   font-size: 15px;
   color: #253858;
+  margin-top: 8px;
 }
 
 .work .card-right h2 {
@@ -262,6 +293,74 @@ p {
   color: #fff;
 }
 
+/* About */
+.about {
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  border-top-right-radius: 60px;
+  padding: 114px 0;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.about .btn-default {
+  width: 162px;
+}
+
+/* About section skills */
+.skills {
+  margin-top: 50px;
+}
+
+.skills .skill {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.skills .skill li span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #dfe1e6;
+}
+
+.work .card h2 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #172b4d;
+  margin-top: 0;
+}
+
+.skills .skill li span h2 {
+  font-weight: 500;
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.skills img {
+  width: 48px;
+  height: 48px;
+}
+
+.skill-lang {
+  flex-direction: column;
+  border-radius: 8px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.social-nl {
+  display: flex;
+  justify-content: space-evenly;
+  width: 200px;
+  margin: 10px;
+  margin-top: 10px;
+}
+
 @media only screen and (min-width: 768px) {
   img {
     width: 100%;
@@ -274,8 +373,8 @@ p {
 
   /* Work */
   .work .card {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    flex-direction: row;
+    gap: 40px;
   }
 
   .skills .skill li span h2 {
@@ -336,5 +435,61 @@ p {
 
   .work .card-left-desk {
     display: block;
+  }
+
+  /* About */
+  .about .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .about {
+    border-top-right-radius: 160px;
+    padding: 114px 20px;
+    width: 100%;
+    margin-top: 142px;
+  }
+
+  .about-text {
+    padding: 0;
+    margin: 0;
+  }
+
+  /* About section skills */
+  .skills {
+    margin-top: 0;
+  }
+
+  .skills .skill {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .skills .skill li span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* padding: 10px 0; */
+    border-bottom: 1px solid #dfe1e6;
+  }
+
+  .skills .skill li span i {
+    font-size: 15px;
+    color: #505f79;
+  }
+
+  .skills img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .skill-lang {
+    flex-direction: row;
+    justify-content: start;
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 20px;
   }
 }
