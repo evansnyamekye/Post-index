@@ -23,6 +23,14 @@ body {
   background-color: #f4f5f7;
 }
 
+img {
+  width: 100%;
+}
+
+p {
+  margin: 10px 0;
+}
+
 /* Boxicon */
 .bx {
   font-size: 35px;
@@ -120,9 +128,214 @@ body {
   opacity: 0.5;
 }
 
-@media (min-width: 786px) {
+/* Work  */
+.work {
+  margin-top: 50px;
+}
+
+.work .lang a {
+  padding: 5px 10px;
+  margin-right: 10px;
+  background: #ebebff;
+  font-weight: 500;
+  font-size: 12px;
+  color: #6070ff;
+  border-radius: 8px;
+}
+
+.work .card {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  margin-top: 104px;
+  border: 1px solid #e6e8eb;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.0);
+}
+
+.work .card-right h2{
+  font-size: 32px;
+  line-height: 44px;
+} 
+
+.skill-lang li h2 {
+  font-weight: 500;
+  font-size: 15px;
+  color: #253858;
+}
+
+.work .card .cano {
+  display: flex;
+  margin-top: 10px;
+}
+
+.skill-lang li {
+  display: flex;
+  justify-content: start;
+  background: #f7f7f9;
+  border-radius: 8px;
+  width: 100%;
+  gap: 10px;
+  margin: 5px 0;
+  padding: 10px;
+}
+
+.work .lang li {
+  margin-bottom: 10px;
+}
+
+.work .card .cano li {
+  margin-right: 10px;
+  font-weight: 600;
+  font-size: 13px;
+  color: #7a869a;
+}
+
+.skills .skill li span i {
+  font-size: 15px;
+  color: #505f79;
+}
+
+.work .card .cano li i {
+  color: #7a869a;
+  font-size: 10px;
+  margin-left: 10px;
+}
+
+.work .card .cano li:first-child {
+  color: #344563;
+}
+
+.work .card .cano li:first-child i {
+  color: #7a869a;
+  font-size: 10px;
+  margin-left: 10px;
+}
+
+.work .card p {
+  font-size: 15px;
+  color: #344563;
+}
+
+.work .lang {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.work .card-left-desk {
+  display: none;
+}
+
+.btn-default {
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  width: 126px;
+  height: 48px;
+  background: #fff;
+  font-weight: 500;
+  font-size: 17px;
+  margin-top: 10px;
+  color: #396df2;
+}
+
+.btn-white {
+  font-family: "Poppins", sans-serif;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  width: 126px;
+  height: 48px;
+  background: #fff;
+  font-weight: 500;
+  font-size: 17px;
+  margin-top: 10px;
+  color: #396df2;
+}
+
+.btn-default:active {
+  background-color: #2230d2;
+  color: #fff;
+}
+
+.btn-default:hover {
+  background-color: #6070ff;
+  color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+  img {
+    width: 100%;
+  }
+
   .container {
     margin: 0 auto;
     padding: 20px;
   }
+
+   /* Work */
+   .work .card {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .skills .skill li span h2 {
+    font-weight: 500;
+    font-size: 20px;
+    color: #000;
+  }
+
+  .work .card .cano {
+    margin-top: 10px;
+  }
+
+  .skill-lang li {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background: #f7f7f9;
+    border-radius: 8px;
+
+    /* width: 100%; */
+    width: 122px;
+    margin: 5px 0;
+    margin-right: 10px;
+    padding: 10px;
+  }
+
+  .work .card .cano li {
+    font-size: 18px;
+  }
+
+  .contact p {
+    font-size: 20px;
+    width: 42%;
+    margin: 10px auto;
+  }
+
+  .work .card p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .work .card .lang {
+    margin-top: 10px;
+  }
+
+  .contact button {
+    display: inline;
+    margin: 10px auto;
+  }
+
+  .work .card button {
+    margin-top: 10px;
+  }
+
+  .work .card-left-mobile {
+    display: none;
+  }
+
+  .work .card-left-desk {
+    display: block;
+  }
+
 }
