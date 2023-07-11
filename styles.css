@@ -97,12 +97,22 @@ p {
   margin-top: -10px;
 }
 
+.contact h1 {
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 40px;
+}
+
 .banner .banner-text h1 {
   width: 95%;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
+}
+
+.contact p {
+  font-size: 20px;
 }
 
 .banner .banner-text p {
@@ -361,6 +371,65 @@ p {
   margin-top: 10px;
 }
 
+/* Contact form */
+.contact-white {
+  background: #fff;
+  color: #fff;
+  width: 100%;
+}
+
+.contact {
+  background-image: url("images/bg/contact-form-mobile.png");
+  background-repeat: no-repeat;
+  background-position: right 21px;
+  background-color: #6070ff;
+  border-top-left-radius: 60px;
+  text-align: center;
+  height: 779px;
+}
+
+.contact form {
+  margin-top: 52px;
+}
+
+.contact .form-control {
+  width: 100%;
+  margin: 10px 10px;
+}
+
+.contact input {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  padding: 10px;
+  height: 48px;
+}
+
+.contact textarea {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  padding: 10px;
+  height: 170px;
+}
+
+#name::placeholder {
+  color: #172b4d;
+  font-family: "Poppins", sans-serif;
+}
+
+#email::placeholder {
+  color: #172b4d;
+  font-family: "Poppins", sans-serif;
+}
+
+#textarea::placeholder {
+  color: #b3bac5;
+  font-family: "Poppins", sans-serif;
+}
+
 @media only screen and (min-width: 768px) {
   img {
     width: 100%;
@@ -491,5 +560,51 @@ p {
     border-radius: 8px;
     width: 100%;
     margin-top: 20px;
+  }
+
+
+  /* Contact form */
+  .contact-white {
+    background: #fff;
+    color: #fff;
+    width: 100%;
+  }
+
+  .contact {
+    background-image: url("images/bg/contact-bg.png");
+    background-repeat: no-repeat;
+    background-position: center 80px;
+    background-color: #6070ff;
+    border-top-left-radius: 60px;
+    text-align: center;
+    height: 846px;
+  }
+
+  .contact h1 {
+    margin-top: 142px;
+    font-weight: 700;
+    font-size: 40px;
+  }
+
+  .contact form {
+    margin-top: 52px;
+  }
+
+  .contact .form-control {
+    width: 40%;
+    margin: 10px auto;
+  }
+
+  .contact .form-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin: 10px auto;
+  }
+
+  .contact input,
+  .contact textarea {
+    width: 100%;
   }
 }
