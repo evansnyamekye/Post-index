@@ -98,7 +98,7 @@ p {
 }
 
 .contact h1 {
-  margin-top: 30px;
+  margin-top: 76px;
   font-weight: 700;
   font-size: 40px;
 }
@@ -379,22 +379,23 @@ p {
 }
 
 .contact {
-  background-image: url("images/bg/contact-form-mobile.png");
+  background-image: url("images/bg/header-shapes\ mobile.png");
   background-repeat: no-repeat;
-  background-position: right 21px;
+  background-position: right 50px;
   background-color: #6070ff;
+  background-size: contain;
   border-top-left-radius: 60px;
   text-align: center;
-  height: 779px;
+  height: 800px;
 }
 
 .contact form {
-  margin-top: 52px;
+  margin-top: 40px;
 }
 
 .contact .form-control {
-  width: 100%;
-  margin: 10px 10px;
+  width: 92%;
+  margin: 10px 0;
 }
 
 .contact input {
