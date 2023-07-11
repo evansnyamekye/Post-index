@@ -385,7 +385,7 @@ p {
   background-color: #6070ff;
   border-top-left-radius: 60px;
   text-align: center;
-  height: 779px;
+  height: 790px;
 }
 
 .contact form {
@@ -393,8 +393,8 @@ p {
 }
 
 .contact .form-control {
-  width: 100%;
-  margin: 10px 10px;
+  width: 92%;
+  margin: 10px 0;
 }
 
 .contact input {
