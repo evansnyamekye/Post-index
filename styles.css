@@ -282,6 +282,7 @@ p {
 
 .btn-white {
   font-family: "Poppins", sans-serif;
+  display: flex;
   border: 1px solid #fff;
   border-radius: 8px;
   width: 126px;
@@ -291,6 +292,11 @@ p {
   font-size: 17px;
   margin-top: 10px;
   color: #396df2;
+  margin: 10px 10px;
+}
+
+.btn-white h5 {
+  padding: 12px 16px 12px 16px;
 }
 
 .btn-default:active {
@@ -379,14 +385,14 @@ p {
 }
 
 .contact {
-  background-image: url("images/bg/contact\ form\ shapes-mobile@2x.png");
+  background-image: url("images/bg/contact-form.png");
   background-repeat: no-repeat;
-  background-position: right 50px;
+  background-position: right;
   background-color: #6070ff;
-  background-size: contain;
-  border-top-left-radius: 60px;
+  background-size: 240px;
+  border-top-left-radius: 120px;
   text-align: center;
-  height: 779px;
+  height: 810px;
 }
 
 .contact form {
@@ -394,21 +400,21 @@ p {
 }
 
 .contact .form-control {
-  width: 94%;
-  margin: 10px 0;
+  width: 92%;
+  margin: 10px 10px;
 }
 
 .contact input {
-  width: 100%;
+  width: 95%;
   background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   padding: 10px;
-  height: 48px;
+  height: 42px;
 }
 
 .contact textarea {
-  width: 100%;
+  width: 95%;
   background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
@@ -419,16 +425,21 @@ p {
 #name::placeholder {
   color: #172b4d;
   font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
 }
 
 #email::placeholder {
   color: #172b4d;
   font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
 }
 
 #textarea::placeholder {
   color: #b3bac5;
   font-family: "Poppins", sans-serif;
+  font-size: 15px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -576,6 +587,7 @@ p {
     background-position: center 80px;
     background-color: #6070ff;
     border-top-left-radius: 60px;
+    background-size: contain;
     text-align: center;
     height: 846px;
   }
