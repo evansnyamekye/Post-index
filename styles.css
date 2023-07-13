@@ -182,7 +182,11 @@ p {
   margin: 0 auto;
   margin-top: 104px;
   border: 1px solid #e6e8eb;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.work .card:hover {
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.103);
+  border: #a7aeff solid 1px;
 }
 
 .lan {
@@ -505,11 +509,25 @@ p {
     padding: 5rem 9rem;
   }
 
+  .contact p {
+    font-size: 20px;
+    width: 42%;
+    margin: 10px auto;
+  }
+
+  .banner .banner-text p {
+    width: 90%;
+  }
+
   /* Work */
   .work .card {
     flex-direction: row;
     gap: 25px;
-    height: 351px;
+  }
+
+  .work .card:hover {
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.103);
+    border: #a7aeff solid 1px;
   }
 
   .skills .skill li span h2 {
@@ -544,12 +562,6 @@ p {
 
   .work .card .cano li {
     font-size: 18px;
-  }
-
-  .contact p {
-    font-size: 20px;
-    width: 42%;
-    margin: 10px auto;
   }
 
   .work .card p {
