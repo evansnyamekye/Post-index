@@ -464,8 +464,43 @@ p {
   }
 
   .container {
+    max-width: 1440px;
     margin: 0 auto;
-    padding: 20px;
+  }
+
+  /* navbar */
+  .navbar ul {
+    display: flex;
+  }
+
+  .navbar ul a {
+    font-weight: 500;
+    font-size: 15px;
+    color: #344563;
+    margin-right: 10px;
+  }
+
+  .navbar i {
+    display: none;
+  }
+
+  /* banner */
+  .banner {
+    position: static;
+    background-image: url("images/bg/header-bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    top: 70px;
+    background-color: #fff;
+    border-bottom-left-radius: 160px;
+    height: 846px;
+    width: 100%;
+  }
+
+  .banner .banner-text {
+    /* padding: 150px 11rem; */
+    padding: 5rem 9rem;
   }
 
   /* Work */
