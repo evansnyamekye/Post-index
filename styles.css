@@ -43,11 +43,6 @@ p {
   color: var(--color-logo);
 }
 
-.logo:hover {
-  transition: transform 1.5s;
-  transform: rotate3d(1, 1, 1, 360deg);
-}
-
 .navbar i {
   color: var(--color-logo);
 }
@@ -548,12 +543,6 @@ p {
   .card-left {
     width: 80%;
     transition: transform 0.2s;
-  }
-
-  .card-left:hover {
-    -ms-transform: scale(1.5);
-    -webkit-transform: scale(1.5);
-    transform: scale(1.3);
   }
 
   .card-left-desk {
