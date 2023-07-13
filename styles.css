@@ -178,6 +178,8 @@ p {
   background-color: #fff;
   border-radius: 16px;
   padding: 20px;
+  width: 90%;
+  margin: 0 auto;
   margin-top: 104px;
   border: 1px solid #e6e8eb;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
@@ -477,7 +479,7 @@ p {
     font-weight: 500;
     font-size: 15px;
     color: #344563;
-    margin-right: 10px;
+    margin-right: 50px;
   }
 
   .navbar i {
@@ -506,7 +508,8 @@ p {
   /* Work */
   .work .card {
     flex-direction: row;
-    gap: 40px;
+    gap: 25px;
+    height: 351px;
   }
 
   .skills .skill li span h2 {
@@ -519,14 +522,20 @@ p {
     margin-top: 10px;
   }
 
+  .card-left {
+    width: 80%;
+  }
+
+  .card-left-desk {
+    width: 80%;
+  }
+
   .skill-lang li {
     display: flex;
     flex-direction: column;
     justify-content: start;
     background: #f7f7f9;
     border-radius: 8px;
-
-    /* width: 100%; */
     width: 122px;
     margin: 5px 0;
     margin-right: 10px;
@@ -549,7 +558,7 @@ p {
   }
 
   .work .card .lang {
-    margin-top: 10px;
+    margin-top: 15px;
   }
 
   .contact button {
@@ -578,7 +587,6 @@ p {
 
   .about {
     border-top-right-radius: 160px;
-    padding: 114px 20px;
     width: 100%;
     margin-top: 142px;
   }
@@ -602,8 +610,6 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    /* padding: 10px 0; */
     border-bottom: 1px solid #dfe1e6;
   }
 
@@ -637,7 +643,7 @@ p {
     background-repeat: no-repeat;
     background-position: center 80px;
     background-color: #6070ff;
-    border-top-left-radius: 60px;
+    border-top-left-radius: 160px;
     background-size: contain;
     text-align: center;
     height: 846px;
