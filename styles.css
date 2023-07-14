@@ -547,6 +547,7 @@ p {
 
   .card-left {
     width: 80%;
+    transition: transform 0.2s;
   }
 
   .card-left:hover {
