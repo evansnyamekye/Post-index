@@ -100,7 +100,7 @@ This project is deployed by using GitHub tools.
 
 ### Online-Link (Complete website)
 
-- https://post-index-git-main-evansnyamekye.vercel.app/
+- https://evansnyamekye.github.io/Post-index/
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
