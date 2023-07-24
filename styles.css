@@ -40,7 +40,7 @@ p {
 .logo {
   font-size: 20px;
   font-weight: 600;
-  color: var(--color-logo);
+  color: var(--color-);
 }
 
 .logo:hover {
@@ -77,6 +77,50 @@ p {
   justify-content: space-between;
   align-items: center;
   text-transform: none;
+}
+
+.social-nl a {
+  margin-right: 10px;
+  color: #505f79;
+  font-size: 25px;
+}
+
+.mobile-nav li a {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.mobile-nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(86, 102, 253, 0.85);
+  backdrop-filter: blur(5px);
+  padding: 50px;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* .mobile-nav a {
+  font-size: 32px;
+} */
+
+.mobile-nav .bx {
+  display: flex;
+  justify-content: right;
+  font-size: 20px;
+}
+
+.mobile-nav li {
+  display: block;
+}
+
+#close-menu {
+  color: #fff;
+  margin-left: auto;
 }
 
 /* Banner Section */
@@ -142,12 +186,6 @@ p {
   display: flex;
   margin-top: 12px;
   gap: 20px;
-}
-
-.social-nl a {
-  margin-right: 10px;
-  color: #505f79;
-  font-size: 25px;
 }
 
 .social a:hover {
@@ -570,6 +608,14 @@ p {
     margin: 5px 0;
     margin-right: 10px;
     padding: 10px;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  #mobile-nav {
+    display: none;
   }
 
   .work .card .cano li {

@@ -38,14 +38,19 @@
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
-          <i class="bx bx-menu"></i>
+          <i id="nav-open" class="bx bx-menu"></i>
         </div>
+        <ul class="mobile-nav" id="mobile-nav">
+          <i id="close-menu" class="bx bx-x"></i>
+          <li><a href="#portfolio" class="nav-link-close">Portfolio</a></li>
+          <li><a href="#about" class="nav-link-close">About</a></li>
+          <li><a href="#contact" class="nav-link-close">Contact</a></li>
+        </ul>
       </nav>
     </header>
     <!-- End of header container -->
 
     <!-- start of Main -->
-
     <main>
       <!-- start of Banner -->
       <section class="banner">
@@ -95,7 +100,7 @@
       <!-- end of Banner -->
 
       <!-- start of works -->
-      <section class="work">
+      <section class="work" id="portfolio">
         <div class="container">
           <div class="card">
             <div class="card-left">
@@ -218,7 +223,7 @@
       <!-- end of works -->
 
       <!-- start of About -->
-      <section class="about">
+      <section class="about" id="about" >
         <div class="container">
           <div class="about-text">
             <h1>About Myself</h1>
@@ -351,5 +356,7 @@
       <!-- End of Contact form -->
     </main>
     <!-- end of main -->
+    <!-- js file -->
+    <script src="main.js"></script>
   </body>
 </html>
