@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   list-style: none;
   text-decoration: none;
 }
@@ -74,6 +74,32 @@ p {
   z-index: 1;
 }
 
+.popup-page .background {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(211, 211, 212, 0.85);
+  backdrop-filter: blur(5px);
+}
+
+.popup-page .card {
+  position: relative;
+  margin-top: 50%;
+  transform: translateY(-20%);
+  width: 90%;
+}
+
+.popup-page .card .close-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 15px;
+  color: #7a869a;
+  border: none;
+  background: transparent;
+}
 
 .flex-nl .lang-nl ul {
   display: flex;
@@ -186,7 +212,7 @@ p {
 /* Banner Section */
 .banner {
   position: relative;
-  background-image: url("images/bg/header-shapes\ mobile.png");
+  background-image: url('images/bg/header-shapes\ mobile.png');
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center 50px;
@@ -244,7 +270,7 @@ p {
 .link-button a {
   width: 83px;
   height: 20px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -445,7 +471,7 @@ p {
 }
 
 .btn-white {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   display: flex;
   border: 1px solid #fff;
   border-radius: 8px;
@@ -557,7 +583,7 @@ p {
 }
 
 .contact {
-  background-image: url("images/bg/contact-form.png");
+  background-image: url('images/bg/contact-form.png');
   background-repeat: no-repeat;
   background-position: right;
   background-color: #6070ff;
@@ -603,21 +629,21 @@ p {
 
 #name::placeholder {
   color: #172b4d;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 15px;
   font-weight: 500;
 }
 
 #email::placeholder {
   color: #172b4d;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 15px;
   font-weight: 500;
 }
 
 #textarea::placeholder {
   color: #b3bac5;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 15px;
 }
 
@@ -650,7 +676,7 @@ p {
   /* banner */
   .banner {
     position: static;
-    background-image: url("images/bg/header-bg.png");
+    background-image: url('images/bg/header-bg.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -874,7 +900,7 @@ p {
   }
 
   .contact {
-    background-image: url("images/bg/contact-bg.png");
+    background-image: url('images/bg/contact-bg.png');
     background-repeat: no-repeat;
     background-position: center 80px;
     background-color: #6070ff;
