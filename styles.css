@@ -326,6 +326,7 @@ p {
   margin: 0 auto;
   margin-top: 104px;
   border: 1px solid #e6e8eb;
+  overflow: scroll;
 }
 
 .work .card:hover {
