@@ -63,7 +63,7 @@ p {
   height: 70px;
   background: #fff;
   color: var(--primary-color);
-  position: fixed;
+  position: sticky;
   top: 90px;
   left: 0;
   width: 100%;

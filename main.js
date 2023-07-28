@@ -171,7 +171,7 @@ if (portfolioItems) {
 }
 
 // start of form validation
-form.addEventListener('keyup', (e) => {
+form.addEventListener('submit', (e) => {
   e.preventDefault();
   // validate the form fields
   const email = document.querySelector('#email').value;
