@@ -4,7 +4,7 @@ const mobileNav = document.querySelector('#mobile-nav');
 const navLinkClose = document.querySelectorAll('.nav-link-close');
 const portfolio = document.getElementById('portfolio');
 const wrapper = document.querySelector('.wrapper');
-const form = document.querySelector('#form');
+// const form = document.querySelector('#form');
 
 navOpen.addEventListener('click', () => {
   mobileNav.style.display = 'flex';
@@ -157,17 +157,3 @@ if (portfolioItems) {
     });
   });
 }
-
-// start of form validation
-form.addEventListener('keyup', (e) => {
-  e.preventDefault();
-  // validate the form fields
-  const email = document.querySelector('#email').value;
-  // check if name field is empty
-  if (email !== email.toLowerCase()) {
-    const errorDiv = document.querySelector('#validate');
-    errorDiv.innerText = 'Kindly type email address in lowercase';
-  } else {
-    form.submit();
-  }
-});
