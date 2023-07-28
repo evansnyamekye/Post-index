@@ -6,7 +6,6 @@ const portfolio = document.getElementById('portfolio');
 const wrapper = document.querySelector('.wrapper');
 const form = document.querySelector('#form');
 
-
 navOpen.addEventListener('click', () => {
   mobileNav.style.display = 'flex';
   document.body.style.overflow = 'hidden';
@@ -184,4 +183,3 @@ form.addEventListener('submit', (e) => {
     form.submit();
   }
 });
-
