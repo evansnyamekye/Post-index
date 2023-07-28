@@ -4,6 +4,7 @@ const mobileNav = document.querySelector('#mobile-nav');
 const navLinkClose = document.querySelectorAll('.nav-link-close');
 const portfolio = document.getElementById('portfolio');
 const wrapper = document.querySelector('.wrapper');
+const form = document.querySelector('#form');
 
 navOpen.addEventListener('click', () => {
   mobileNav.style.display = 'flex';
@@ -124,22 +125,34 @@ if (portfolioItems) {
             <div class="card-right">
               <h2>${portfolioItemsDetail[i].name}</h2>
               <ul class="cano">
-                <li>${portfolioItemsDetail[i].title}<i class="fa fa-circle"></i></li>
-                <li>${portfolioItemsDetail[i].stack}<i class="fa fa-circle"></i></li>
+                <li>${
+  portfolioItemsDetail[i].title
+}<i class="fa fa-circle"></i></li>
+                <li>${
+  portfolioItemsDetail[i].stack
+}<i class="fa fa-circle"></i></li>
                 <li>${portfolioItemsDetail[i].year}</li>
               </ul>
               <div class="snap-image">
-                <img src="${portfolioItemsDetail[i].images}" alt="${portfolioItemsDetail[i].name}">
+                <img src="${portfolioItemsDetail[i].images}" alt="${
+  portfolioItemsDetail[i].name
+}">
               </div>
               <div class="flex-nl">
                 <p>${portfolioItemsDetail[i].text}</p>  
                 <ul class="lang">
-                ${portfolioItemsDetail[i].workStack.map((stack) => `<li>${stack}</li>`).join('')}
+                ${portfolioItemsDetail[i].workStack
+    .map((stack) => `<li>${stack}</li>`)
+    .join('')}
                 </ul>
                   <div class="link-button">
-                    <button class="btn-default"><a href="${portfolioItemsDetail[i].live} class="see-btn">See live<img
+                    <button class="btn-default"><a href="${
+  portfolioItemsDetail[i].live
+} class="see-btn">See live<img
                     src="images/see-images/live.png" alt="live-link" /></a></button>
-                    <button class="btn-default"><a href="${portfolioItemsDetail[i].source} class="see-btn">See source<img
+                    <button class="btn-default"><a href="${
+  portfolioItemsDetail[i].source
+} class="see-btn">See source<img
                     src="images/see-images/Vector.png" alt="live-link" /></a></button>
                   </div>
               </div>
@@ -156,3 +169,17 @@ if (portfolioItems) {
     });
   });
 }
+
+// start of form validation
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  // validate the form fields
+  const email = document.querySelector('#email').value;
+  // check if name field is empty
+  if (email !== email.toLowerCase()) {
+    const errorDiv = document.querySelector('#validate');
+    errorDiv.innerText = 'Kindly type email address in lowercase';
+  } else {
+    form.submit();
+  }
+});
