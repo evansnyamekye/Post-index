@@ -2,8 +2,6 @@ const navOpen = document.querySelector('#nav-open');
 const closeMenu = document.querySelector('#close-menu');
 const mobileNav = document.querySelector('#mobile-nav');
 const navLinkClose = document.querySelectorAll('.nav-link-close');
-const portfolio = document.getElementById('portfolio');
-const wrapper = document.querySelector('.wrapper');
 
 navOpen.addEventListener('click', () => {
   mobileNav.style.display = 'flex';
@@ -156,3 +154,4 @@ if (portfolioItems) {
     });
   });
 }
+
