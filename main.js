@@ -5,6 +5,10 @@ const navLinkClose = document.querySelectorAll('.nav-link-close');
 const portfolio = document.getElementById('portfolio');
 const wrapper = document.querySelector('.wrapper');
 const form = document.querySelector('#form');
+const names = document.querySelector('#name');
+const email = document.querySelector('#email');
+const message = document.querySelector('#message');
+
 
 navOpen.addEventListener('click', () => {
   mobileNav.style.display = 'flex';
@@ -183,3 +187,22 @@ form.addEventListener('submit', (e) => {
     form.submit();
   }
 });
+
+// save data in local-storage
+form.addEventListener('keyup', () => {
+  const formData = {
+    name: names.value,
+    email: email.value,
+    message: message.value,
+  };
+  localStorage.setItem('formData', JSON.stringify(formData));
+});
+// receive data from local-storage
+window.onload = () => {
+  const formData = localStorage.getItem('formData');
+  const formDataObject = JSON.parse(formData);
+  names.value = formDataObject.name;
+  email.value = formDataObject.email;
+  message.value = formDataObject.message;
+};
+
