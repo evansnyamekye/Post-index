@@ -65,6 +65,13 @@ p {
   padding: 20px;
 }
 
+/* Nav styles */
+.navbar {
+  height: 70px;
+  background: #fff;
+  color: var(--primary-color);
+  position: sticky;
+
 .popup-page {
   position: fixed;
   top: 90px;

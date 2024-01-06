@@ -9,6 +9,7 @@ const names = document.querySelector('#name');
 const email = document.querySelector('#email');
 const message = document.querySelector('#message');
 
+
 navOpen.addEventListener('click', () => {
   mobileNav.style.display = 'flex';
   document.body.style.overflow = 'hidden';
@@ -204,3 +205,4 @@ window.onload = () => {
   email.value = formDataObject.email;
   message.value = formDataObject.message;
 };
+
